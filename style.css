@@ -1,0 +1,165 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+
+body{
+   height: 100vh;
+    background-color: rgba(137, 43, 226, 0.5);
+    width: 100%;
+ 
+}
+
+.container{
+padding: 20px;
+}
+
+.button1 {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   .button1::before,
+   .button1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   .button1::before {
+    left: -10px;
+    background: #240046;
+   }
+   
+   .button1::after {
+    right: -10px;
+    background: #5a189a;
+   }
+   
+   .button1:hover::before,
+   .button1:hover::after {
+    width: 58%;
+   }
+   
+   .button1:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+   }
+   
+   .button1 span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
+
+
+.Error{
+    color: rgb(197, 22, 22);
+    font-family: cursive;
+ margin-left: 5px;
+   }
+   .input {
+    border: 2px solid transparent;
+    width: 30em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    margin-left: 5px;
+  }
+  
+  .input:hover,
+  .input:focus {
+    border: 2px solid #db39a3;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+  }
+  
+
+.pageOne .inputone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      margin: 20px 0;
+
+}
+
+.pageOne h2{
+    color: rgb(74, 73, 73);
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+.pageOne input{
+    padding: 10px 100px;
+    outline: none;
+
+}
+
+
+
+.pageOne button:hover{
+    color: rgb(133, 23, 34);
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    color: rgb(222, 70, 86);
+    padding: 20px 0;
+    font-family: fantasy;
+}
+
+.BtnTwo {
+ font-weight: 600;
+ font-size:30px;
+ color: #e0aaff;
+ 
+  
+   }
+   
+   .BtnTwo:hover {
+   color: white;
+   
+   }
+
+
+.pageTwo label{
+    font-family: cursive;
+    font-size: 20px;
+  
+}
+.hidden{
+    display: none;
+   }
+/* 
+table{
+    display: none;
+} */
+
+.hide{
+    display: none;
+}
+
+table td{
+   font-size: 20px;
+   font-family: sans-serif;
+}
